@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -18,9 +19,9 @@ namespace AppTerceiroC
         private void btnSalvar_Clicked(object sender, EventArgs e)
         {
             MySqlConnection conn = new MySqlConnection(Conexao.strConexao);
-            MySqlCommand inserirNome = new MySqlCommand(ComandoSQL.inserirNome);
+            MySqlCommand inserirNome = new MySqlCommand(ComandoSQL.inserirNome, conn);
 
-            inserirNome.Paeameters.AddWithValue("@nome", txtNome.Text);
+            inserirNome.Parameters.AddWithValue("@nome", txtNome.Text);
             conn.Open();
             inserirNome.ExecuteNonQuery();
             conn.Close();
