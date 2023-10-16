@@ -21,7 +21,7 @@ namespace AppTerceiroC
             MySqlConnection conn = new MySqlConnection(Conexao.strConexao);
             MySqlCommand inserirNome = new MySqlCommand(ComandoSQL.inserirNome, conn);
 
-            inserirNome.Parameters.AddWithValue("@nome", txtNome.Text);
+            inserirNome.Parameters.AddWithValue("@ID_ALUNO_CPF", txtNome.Text);
             conn.Open();
             inserirNome.ExecuteNonQuery();
             conn.Close();
