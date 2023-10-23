@@ -4,8 +4,23 @@
              x:Class="AppTerceiroC.MainPage">
 
     <StackLayout Padding="50" BackgroundColor="#f7a8e2">
-        <Label Text="Nome"/>
-        <Entry x:Name="txtNome"/>
+        <Label Text="ID_ALUNO_CPF"/>
+        <Entry x:Name="txtID_ALUNO_CPF"/>
+        <Label Text="NOME_DO_ALUNO"/>
+        <Entry x:Name="txtNOME_DO_ALUNO"/>
+        <Label Text="DATA_DE_NASCIMENTO"/>
+        <Entry x:Name="txtDATA_DE_NASCIMENTO"/>
+        <Label Text="CONTATO_DE_EMERGENCIA"/>
+        <Entry x:Name="txtCONTATO_DE_EMERGENCIA"/>
+        <Label Text="NOME_DO_RESPONSAVEL"/>
+        <Entry x:Name="txtNOME_DO_RESPONSAVEL"/>
+        <Label Text="ENDERECO1"/>
+        <Entry x:Name="txtENDERECO1"/>
+        <Label Text="ENDERECO2"/>
+        <Entry x:Name="txtENDERECO2"/>
+        <Label Text="SERIE"/>
+        <Entry x:Name="txtSERIE"/>
+        
         <Button Text="Salvar" x:Name="btnSalvar" Clicked="btnSalvar_Clicked"/>
     </StackLayout>
 </ContentPage>
